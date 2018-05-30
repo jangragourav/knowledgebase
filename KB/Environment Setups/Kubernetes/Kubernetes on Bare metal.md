@@ -276,7 +276,7 @@ Edit the Hosts file to add the Hostnames and IP's of all the Nodes that would be
 5. `Docker` Setup, Proceed to configuration of `docker` by adding the values for the parameters mentioned below
     >File: `/usr/lib/systemd/system/docker.service`
     ```
-    EnvironmentFile=/var/lib/flanneld/subnet.env
+    EnvironmentFile=/var/run/flannel/subnet.env
     ```
 
     One more additional step that needs to be performed is to create a group for docker and assign users to it as shown below  
